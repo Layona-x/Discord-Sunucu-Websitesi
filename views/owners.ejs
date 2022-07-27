@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="owners.css">
+<div class="nav">
+    <h1 class="logo">Nezuko<br>Development</h1>
+   <div class="nav-data">
+      <li><a href="/">Home</a></li>
+        <li><a href="/register">Register</a></li>
+          <li><a href="/basvuru">Başvuru</a></li>
+   </div>
+</div>
+<br>
+<br>
+<h1 style="text-align:center;color: white;"><%= name1 %></h1>
+<hr>
+  <div class="anakard">
+<img src="<%= avatar1 %>">
+<strong><p><h4>İsim : <%= name1 %></h4></p></strong>
+<strong><p><h4>Kullanıcı Status:<%= status1.toString().replace("dnd", `Rahatsız Etmeyin`)
+        .replace("online", `Çevrimiçi`)
+        .replace("idle", `Boşta`)
+        .replace("offline", `Çevrimdışı`) %></h4></p></strong>
+<strong><p><h4>Kullanıcı Oynuyor:<%= game1 || "Oynadığı Bir Oyun Yok"%></h4></p></strong>
+<strong><p><h4>Kullanıcı Durumu:<%= durum1 
+  || "Hiçbir Durum Belirtmemiş"%></h4></p></strong>
+  </div>
+  <br>
+   <h1 style="text-align:center;color: white;"><%= name2 %></h1>
+   <hr>
+  <div class="anakard">
+<img src="<%= avatar2 %>">
+<strong><p><h4>İsim : <%= name2 %></h4></p></strong>
+<strong><p><h4>Kullanıcı Status:<%= status2.toString().replace("dnd", `Rahatsız Etmeyin`)
+        .replace("online", `Çevrimiçi`)
+        .replace("idle", `Boşta`)
+        .replace("offline", `Çevrimdışı`) %></h4></p></strong>
+<strong><p><h4>Kullanıcı Oynuyor:<%= game2 %></h4></p></strong>
+<strong><p><h4>Kullanıcı Durumu:<%= durum2
+  || "Hiçbir Durum Belirtmemiş"%></h4></p></strong>
+     </div>
+<br>
+<h1 style="text-align:center;color: white;"><%= name3 %></h1>
+   <hr>
+<div class="anakard">
+<img src="<%= avatar3 %>">
+<strong><p><h4>İsim : <%= name3 %></h4></p></strong>
+<strong><p><h4>Kullanıcı Status:<%= status2.toString().replace("dnd", `Rahatsız Etmeyin`)
+        .replace("online", `Çevrimiçi`)
+        .replace("idle", `Boşta`)
+        .replace("offline", `Çevrimdışı`) %></h4></p></strong>
+<strong><p><h4>Kullanıcı Oynuyor:<%= game3 %></h4></p></strong>
+<strong><p><h4>Kullanıcı Durumu:<%= durum3
+  || "Hiçbir Durum Belirtmemiş"%></h4></p></strong>
+  </div>
